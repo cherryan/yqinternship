@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>优趣实习</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <%= render "common/flashes" %>
+          <%= render "common/navbar" %>
+          <%= yield %>
+        </div>
+     </div>
+   </div>
+
+          <%= render "common/footer" %>
+
+  </body>
+</html>
