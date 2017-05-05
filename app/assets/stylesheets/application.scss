@@ -21,14 +21,14 @@
 
  .navbar-default {
 
-     background-color: #A1887F;
-     border-color: #A1887F;
+     background-color: #24273a;
+     border-color: #24273a;
      margin-bottom: 0;
      border-radius: 0;
  }
 
  .navbar-default .navbar-brand {
-     color: #424242;
+     color: #777474;
      padding: 10px 15px;
      line-height: 30px;
  }
@@ -40,7 +40,7 @@
  }
 
  .navbar-default .navbar-nav > li > a {
-     color: #424242;
+     color: #777474;
  }
 
  .navbar-default .navbar-nav > li > a:hover,
@@ -76,7 +76,7 @@ footer {
     width: 100%;
     height: 60px;
     color: #ffffff;
-    background-color: #A1887F;
+    background-color: #24273a;
     padding-top: 10px;
 }
 
@@ -126,14 +126,14 @@ footer {
     padding: 4px;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #fff6f2;
+    background-color: #ecf1f7;
     border: 1px;
     border-radius: 4px;
   }
 
   i.fa {
     color: #fff;
-    background: #6d9dc0;
+    background: #ecf1f7;
     border-radius: 100px;
 
 
@@ -209,13 +209,13 @@ footer {
 
 .section-title {
   font-family: Georgia,"Times New Roman",Times,serif;
-  color: #a08585;
+  color: #444444;
   font-size: 30px;
   text-align: center;
 }
 
 body {
-  background-color: #fff6f2;
+  background-color:#ecf1f7;
 
 }
 
@@ -331,9 +331,9 @@ font-size: 12px;
 }
 
 
-html { height: 100%;}
-  body { min-height: 100%; display: flex; flex-direction: column;}
-  .content { flex: 1;}
+//html { height: 100%;}
+//  body { min-height: 100%; display: flex; flex-direction: column;}
+//  .content { flex: 1;}
 
   //-------- jobs admin-----
   .custab{
