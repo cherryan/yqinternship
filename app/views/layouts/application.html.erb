@@ -10,17 +10,22 @@
   </head>
 
   <body>
-    <div class="content" style="margin-bottom: 70px;">
+    <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <%= render "common/flashes" %>
-          <%= render "common/navbar" %>
-          <%= yield %>
+          <header>
+            <%= render "common/flashes" %>
+            <%= render "common/navbar" %>
+          </header>
+          <section class="main-content">
+
+            <%= yield %>
+          </section>
         </div>
      </div>
    </div>
-
-          <%= render "common/footer" %>
-
+  <footer>
+            <%= render "common/footer" %>
+  </footer>
   </body>
 </html>

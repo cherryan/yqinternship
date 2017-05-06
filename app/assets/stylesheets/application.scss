@@ -19,6 +19,10 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+ html {
+   height: 100%;
+ }
+
  .navbar-default {
 
      background-color: #24273a;
@@ -71,6 +75,7 @@
  }
 //---------Footer---------
 footer {
+    flex: 0 0 auto;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -78,6 +83,11 @@ footer {
     color: #ffffff;
     background-color: #24273a;
     padding-top: 10px;
+
+}
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #24273a;
 }
 
 //---------carousel---------
@@ -117,43 +127,32 @@ footer {
   }
 
   //----- 网站简介 功能 -----
-  .section-title {
-
+//   .section-title {
+//
+//   }
+   .row-fea .thumbnail{
+           text-align: center;
+//      display: block;
+//     padding: 4px;
+//     margin-bottom: 20px;
+//     line-height: 1.42857143;
+     background-color: #ecf1f7;
+     border: 0px;
+//     border-radius: 4px;
   }
-  .row-fea .thumbnail{
-     text-align: center;
-     display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #ecf1f7;
-    border: 1px;
-    border-radius: 4px;
-  }
+//
+//   i.fa {
+//     color: #fff;
+//     background: #ecf1f7;
+//     border-radius: 100px;
+//
+//
 
-  i.fa {
-    color: #fff;
-    background: #ecf1f7;
-    border-radius: 100px;
-
-
-}
-.fa-dollar {
- padding: 20px 30px;
-}
-.fa-male {
- padding: 20px 30px;
-}
-.fa-heart {
- padding: 20px 20px;
-}
-.fa-book {
- padding: 20px 20px;
-}
 
 
 //---------案例--------
 .row-test .thumbnail{
+
     font-family: Georgia,"Times New Roman",Times,serif;
     display: block;
     padding: 4px;
@@ -177,20 +176,22 @@ footer {
 }
 
 //-------合作伙伴----------
-.our-brand {
-    background-color: #F2F2F2;
-}
-.section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+.content-partners{
+  text-align: center;
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
 }
 
-.container {
-    width: 750px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.section-heading-a {
+  border-top: 1px solid #e7e7e7;
+}
+
+.content-partners .lead {
+  text-align: center;
+  vertical-align: middle;
+  color: #444444;
 }
 .short-line {
     display: block;
@@ -208,6 +209,7 @@ footer {
 }
 
 .section-title {
+  border-top: 1px solid #e7e7e7;
   font-family: Georgia,"Times New Roman",Times,serif;
   color: #444444;
   font-size: 30px;
@@ -216,9 +218,17 @@ footer {
 
 body {
   background-color:#ecf1f7;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header {
+  flex: 0 0 auto;
 }
 
+.main-content{
+  flex: 1 0 auto;
+}
 //------ LOGIN MODAL ------
 .loginmodal-container {
 padding: 30px;
@@ -330,6 +340,10 @@ font-size: 12px;
     width: 200px; //加上width
 }
 
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
 
 //html { height: 100%;}
 //  body { min-height: 100%; display: flex; flex-direction: column;}
