@@ -10,22 +10,22 @@
   </head>
 
   <body>
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <header>
-            <%= render "common/flashes" %>
-            <%= render "common/navbar" %>
-          </header>
-          <section class="main-content">
 
-            <%= yield %>
-          </section>
-        </div>
-     </div>
+    <div class="container-fluid wrapper">
+      <div class="row header">
+          <%= render "common/flashes" %>
+          <%= render "common/navbar" %>
+      </div>
+
+      <div class="row content">
+        <%= yield %>
+      </div>
+
+      <div class="row footer">
+        <%= render "common/footer" %>
+      </div>
    </div>
-  <footer>
-            <%= render "common/footer" %>
-  </footer>
+
+
   </body>
 </html>

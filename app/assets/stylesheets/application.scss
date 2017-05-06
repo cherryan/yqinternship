@@ -19,10 +19,34 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
- html {
-   height: 100%;
+ html, body {
+     /* 設定body高度為100% 拉到視窗可視的大小 */
+     height: 100%;
+     background-color:#ecf1f7;
  }
 
+ .wrapper {
+     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+     min-height: 100%;
+     /* 位置設為relative, 作為footer區塊位置的參考 */
+     position: relative;
+ }
+
+ .header {
+     /* 設定header的高度 */
+     height: 60px;
+     box-sizing: border-box;
+ }
+
+ .content {
+     /* 留出header及footer區塊的空間 */
+     padding-top: 0px;
+     padding-bottom: 60px;
+ }
+
+ .navbar {
+   height: 60px;
+ }
  .navbar-default {
 
      background-color: #24273a;
@@ -73,22 +97,28 @@
      width: 32px;
      height: 32px;
  }
+
+.panel {
+  margin-top: 10px;
+}
 //---------Footer---------
-footer {
-    flex: 0 0 auto;
+.footer {
     position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
     color: #ffffff;
     background-color: #24273a;
     padding-top: 10px;
 
+    /* 設定footer的高度 */
+    height: 60px;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+
 }
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #24273a;
-}
+
 
 //---------carousel---------
 
@@ -216,19 +246,7 @@ footer .footer-below {
   text-align: center;
 }
 
-body {
-  background-color:#ecf1f7;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-header {
-  flex: 0 0 auto;
-}
 
-.main-content{
-  flex: 1 0 auto;
-}
 //------ LOGIN MODAL ------
 .loginmodal-container {
 padding: 30px;
